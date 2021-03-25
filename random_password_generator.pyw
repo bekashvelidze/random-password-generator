@@ -40,10 +40,6 @@ class RandomPassword(QtWidgets.QMainWindow):
         if self.ui.password.text():
             pyperclip.copy(self.ui.password.text())
             self.ui.password.setText('Password was copied!')
-        elif self.ui.password.text() == 'Password field is empty!':
-            pass
-        elif self.ui.password.text() == 'Password was copied!':
-            pass
         else:
             self.ui.password.setText('Password field is empty!')
 
