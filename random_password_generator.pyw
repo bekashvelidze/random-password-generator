@@ -19,6 +19,7 @@ class RandomPassword(QtWidgets.QMainWindow):
         self.ui.length.setText('0')
         self.ui.generate_pass.clicked.connect(self.generate_pass)
         self.ui.copy.clicked.connect(self.copy_pass)
+        self.ui.clear.clicked.connect(self.clear_all)
 
     def generate_pass(self):
         chars = '+-/*!&#?=@<>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
@@ -42,6 +43,11 @@ class RandomPassword(QtWidgets.QMainWindow):
             self.ui.password.setText('Password was copied!')
         else:
             self.ui.password.setText('Password field is empty!')
+
+    def clear_all(self):
+
+        self.ui.length.setText('')
+        self.ui.password.setText('')
 
 
 app = QtWidgets.QApplication([])

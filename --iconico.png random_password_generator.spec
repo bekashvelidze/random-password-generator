@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['random_password_generator.pyw'],
+a = Analysis(['--iconico.png random_password_generator.pyw'],
              pathex=['C:\\Users\\Beka\\Desktop\\random_password_generator'],
              binaries=[],
              datas=[],
@@ -23,11 +23,11 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='random_password_generator',
+          name='--iconico.png random_password_generator',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False , icon='ico.ico')
+          console=False )
