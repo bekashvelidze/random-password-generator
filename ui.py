@@ -110,7 +110,7 @@ class Ui_MainWindow(object):
 "color: white;")
         self.copy.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("copy.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("copy.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.copy.setIcon(icon)
         self.copy.setIconSize(QtCore.QSize(32, 32))
         self.copy.setObjectName("copy")
