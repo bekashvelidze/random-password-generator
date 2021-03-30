@@ -1,4 +1,5 @@
 import random
+from string import digits, punctuation, ascii_letters
 import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QIcon
@@ -22,7 +23,7 @@ class RandomPassword(QtWidgets.QMainWindow):
         self.ui.clear.clicked.connect(self.clear_all)
 
     def generate_pass(self):
-        chars = '+-/*!&#?=@<>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+        chars = digits + punctuation + ascii_letters
         password = ''
         length = int(self.ui.length.text())
         if length == 0:
